@@ -326,8 +326,6 @@
     }
 }
 
-
-
 .overflow-table {
     @media screen and (max-width:1024px) {
         overflow-x: scroll;
@@ -362,12 +360,13 @@
 
                 @media screen and (min-width:501px) {
                     font-size: 14px;
+                    padding-top: .2rem;
+                    padding-bottom: .2rem;
                 }
             }
         }
     }
 }
-
 
 @media (max-width: 768px) {
     .custom-card {
@@ -509,7 +508,6 @@ span.card-link {
     }
 }
 
-
 .input-icon {
     position: relative;
     display: inline-block;
@@ -527,5 +525,145 @@ span.card-link {
     transform: translateY(-50%);
     color: #aaa;
 }
+
+
+.custom-card {
+    label {
+        color: var(--cinza-medio);
+        font-size: 14px;
+    }
+
+    select,
+    textarea {
+        background-color: var(--cinza-medio);
+        border-radius: 6px !important;
+
+        &:focus {
+            border-color: var(--laranja);
+            background-color: var(--cinza-claro);
+            color: var(--preto-medio);
+        }
+    }
+
+    input {
+        background-color: var(--cinza-medio);
+        border-radius: 6px !important;
+        color: var(--cinza) !important;
+
+        &:focus {
+            border-color: var(--laranja);
+            background-color: var(--cinza-claro);
+            color: var(--preto-medio);
+        }
+    }
+}
+
+.card-link-btn {
+    color: var(--preto-medio);
+    background-color: var(--laranja);
+    // display: flex;
+    align-items: center;
+    border-radius: 6px;
+    padding: .5rem 2rem;
+
+}
+
+.subtitle-p {
+    font-size: 12px;
+    color: var(--cinza-claro);
+}
+
+
+.custom-card {
+    .form-row {
+        justify-content: space-between;
+
+        // .form-control.date{
+        //     width: 31%;
+        // }
+    }
+}
+
+
+.custom-file {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    background-color: #d3d3d3; // cor cinza como na imagem
+    border-radius: 8px; // bordas arredondadas
+    padding: 10px;
+    color: #666;
+    font-family: Arial, sans-serif;
+
+    input[type="file"] {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        opacity: 0; // Esconde o input real
+        cursor: pointer;
+    }
+
+    label {
+        display: inline-block;
+        width: calc(100% - 30px); // Subtraímos para deixar espaço para o ícone
+        cursor: pointer;
+    }
+
+    .upload-icon {
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 18px; // Tamanho do ícone de upload
+        color: #666;
+    }
+}
+
+.custom-file:hover {
+    background-color: #bbb; // Cor de fundo ao passar o mouse
+}
+
+.custom-file input[type="file"]:focus+label {
+    border-color: #007BFF; // Mudança de cor na borda quando o input é selecionado
+    outline: none;
+}
+
+label.fileInput {
+    color: var(--preto-medio) !important;
+}
+
+
+.accordion {
+    .card {
+        background-color: transparent !important;
+        border: none;
+        // margin-bottom: 1rem;
+        // border-bottom: 1px solid var(--cinza);
+
+        div {
+            background-color: transparent !important;
+        }
+
+        .card-header {
+            padding: 0;
+            
+
+
+            button {
+                padding: 0;
+                color: var(--cinza);
+                font-size: 12px;
+            }
+        }
+
+        .card-body{
+            padding: 0;
+        }
+    }
+}
+
+
 
 // @media screen and (min-width:769px) {}
