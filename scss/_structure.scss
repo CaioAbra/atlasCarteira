@@ -268,7 +268,7 @@
         }
 
         @media screen and (max-width:768px) {
-            font-size: 18px;
+            font-size: 24px;
         }
 
         @media screen and (min-width:769px) {
@@ -569,8 +569,12 @@ span.card-link {
 }
 
 .subtitle-p {
-    font-size: 12px;
+    font-size: 14px;
     color: var(--cinza-claro);
+
+    @media screen and (min-width:1366px) {
+        font-size: 1rem;
+    }
 }
 
 
@@ -648,7 +652,7 @@ label.fileInput {
 
         .card-header {
             padding: 0;
-            
+
 
 
             button {
@@ -658,7 +662,7 @@ label.fileInput {
             }
         }
 
-        .card-body{
+        .card-body {
             padding: 0;
         }
     }
