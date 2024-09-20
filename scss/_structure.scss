@@ -580,9 +580,11 @@ span.card-link {
     font-size: 14px;
     color: var(--cinza-claro);
     transition: all .3s ease;
-    &:hover{
+
+    &:hover {
         text-decoration: none;
-        color: var(--laranja);;
+        color: var(--laranja);
+        ;
     }
 
     @media screen and (min-width:1366px) {
@@ -606,11 +608,11 @@ span.card-link {
     position: relative;
     display: inline-block;
     width: 100%;
-    background-color: #d3d3d3; // cor cinza como na imagem
-    border-radius: 8px; // bordas arredondadas
+    background-color: var(--cinza-medio);
+    border-radius: 6px; // bordas arredondadas
     padding: 10px;
-    color: #666;
-    font-family: Arial, sans-serif;
+    // color: #666;
+    // font-family: Arial, sans-serif;
 
     input[type="file"] {
         position: absolute;
@@ -681,6 +683,10 @@ label.fileInput {
     }
 }
 
+
+.labelfileInput {
+    color: var(--cinza) !important;
+}
 
 
 // @media screen and (min-width:769px) {}
