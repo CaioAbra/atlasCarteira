@@ -351,7 +351,7 @@ text {
 @media screen and (max-width: 500px) {
   .overflow-table .table tr th,
   .overflow-table .table tr td {
-    font-size: 10px;
+    font-size: 12px;
   }
 }
 @media screen and (min-width: 501px) {
