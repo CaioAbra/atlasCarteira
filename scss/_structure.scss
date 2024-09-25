@@ -57,6 +57,13 @@
     .sidebar-header {
         padding-bottom: 1rem;
         display: inline-flex;
+        align-items: center;
+
+        img.iconDesactive {
+            @media screen and (min-width:1024px) {
+                width: 100%;
+            }
+        }
     }
 
     ul.components {
@@ -65,7 +72,7 @@
 
         a {
             padding: 10px;
-            font-size: 1.1em;
+            font-size: 1.1rem;
             display: block;
             color: var(--cinza-claro);
             transition: all .3s ease;
@@ -77,7 +84,7 @@
                 border-radius: 12px;
 
                 svg {
-                    // stroke: var(--laranja);
+                    stroke: var(--laranja);
                     // fill: var(--laranja);
                 }
 
@@ -91,13 +98,16 @@
 
         .titles {
             padding: 10px;
-            font-size: 1.1em;
+            font-size: 14px;
             display: block;
-            color: var(--cinza-claro);
+            color: var(--cinza-medio);
             text-transform: uppercase;
         }
 
         svg {
+
+            margin-right: .5rem;
+
 
             @media screen and (min-width:1025px) {
                 margin-right: .5rem;
@@ -402,16 +412,18 @@
     }
 }
 
+h6.name {
+    color: var(--cinza-claro);
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
 span {
-    &.name {
-        color: var(--cinza-claro);
-        font-size: 16px;
-        font-weight: 400;
-    }
 
     &.subtitle {
         color: var(--cinza-medio);
-        font-size: 10px;
+        font-size: 12px;
         font-weight: 400;
     }
 }
